@@ -16,6 +16,6 @@
 项目完成后的界面
 ![todolist.gif](https://upload-images.jianshu.io/upload_images/5645890-06da018f806fef24.gif?imageMogr2/auto-orient/strip)
 
-
+使用原生`js`，clone之后直接运行`.html`文件便可以使用，但是如果使用的是`react`文件，clone之后需要先下载`node_modules`,使用命令`npm install`，然后运行`npm start`
 
 项目要求：https://www.jianshu.com/p/659cdcac8b9b
