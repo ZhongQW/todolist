@@ -19,3 +19,6 @@
 使用原生`js`，clone之后直接运行`.html`文件便可以使用，但是如果使用的是`react`文件，clone之后需要先下载`node_modules`,使用命令`npm install`，然后运行`npm start`
 
 项目要求：https://www.jianshu.com/p/659cdcac8b9b
+
+2018.9.28初次使用Vue写的小demo，下面是界面部分，相比上次的react增加了编辑功能
+![Vue_todolist.gif](https://upload-images.jianshu.io/upload_images/5645890-e146a9afb6a657a0.gif?imageMogr2/auto-orient/strip)
