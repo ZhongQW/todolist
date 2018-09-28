@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>这是一个使用Vue写的todos</title>
+    <link rel="stylesheet" href="src/css/css.css" />
+    <script src="src/js/vue.js"></script>
+    <script src="src/js/index.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>todos</h1>
+    <input type="text" rel="input" placeholder="请输入" @keydown="sendHandle($event)"  />
+    <div id="content">
+        <ul id="list">
+            <li v-for="item, i in list" v-if=item.status>
+                <div v-bind:class="item.type?'img2':'img1'" v-on:click="sendChecked($event, i)"></div>
+                <span class="ss" v-bind:class="{checked: item.type}" v-on:dblclick="edit($event, i)">{{item.content}}</span>
+                <span class="del" v-on:click="delHandle(i)"></span>
+            </li>
+        </ul>
+        <div id="bottom">
+            <span>有<i>{{len}}</i>项未做</span>
+            <button v-on:click="allHandle">all</button>
+            <button v-on:click="activeHandle">active</button>
+            <button v-on:click="completedHandle">completed</button>
+            <button v-on:click="clearHandle">clear</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
